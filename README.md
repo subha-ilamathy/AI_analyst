@@ -93,7 +93,7 @@ The system uses OpenAI for two main features:
 Configure credentials:
 
 ```bash
-export OPENAI_API_KEY=sk-...
+export OPENAI_API_KEY=your_api_key
 # Optional: choose a lightweight model
 export OPENAI_MODEL=gpt-4o-mini
 ```

@@ -2,7 +2,7 @@ import os
 import re
 from typing import Any, List, Tuple
 
-from .db import connect
+from .data.db import connect
 
 
 SAFE_CLAUSES = {
