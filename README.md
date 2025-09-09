@@ -2,6 +2,8 @@
 
 Prototype that analyzes a mock email campaign database and answers natural-language questions regarding the email campaign.
 
+![AI Analyst Email Campaign](screenshot.png)
+
 ## Setup
 
 Requirements: Python 3.8+
