@@ -192,4 +192,3 @@ def run_sql_readonly(sql: str) -> Tuple[List[str], List[Tuple[Any, ...]], str]:
 __all__ = ["generate_sql", "run_sql_readonly", "is_configured"]
 
 
-

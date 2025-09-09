@@ -54,23 +54,23 @@ def format_response_natural(
         
         # Create the prompt
         prompt = f"""You are an AI analyst helping users understand email campaign data. 
-Convert the raw result into a natural, conversational response that directly answers the user's question.
+            Convert the raw result into a natural, conversational response that directly answers the user's question.
 
-User Question: "{query}"
+            User Question: "{query}"
 
-Context:
-{context_str}
+            Context:
+            {context_str}
 
-Raw Result: {raw_result}
+            Raw Result: {raw_result}
 
-Please provide a natural, conversational response that:
-1. Directly answers the user's question
-2. Uses natural language (not technical jargon)
-3. Includes relevant numbers and insights
-4. Is concise but informative
-5. Sounds like a helpful analyst explaining the data
+            Please provide a natural, conversational response that:
+            1. Directly answers the user's question
+            2. Uses natural language (not technical jargon)
+            3. Includes relevant numbers and insights
+            4. Is concise but informative
+            5. Sounds like a helpful analyst explaining the data
 
-Response:"""
+            Response:"""
 
         # Call OpenAI API
         response = openai.chat.completions.create(
@@ -112,11 +112,11 @@ def format_error_natural(error_message: str, query: str) -> str:
         import openai
         
         prompt = f"""You are a helpful AI analyst. The user asked: "{query}"
-But there was an error: {error_message}
+        But there was an error: {error_message}
 
-Please provide a friendly, natural explanation of what went wrong and suggest what the user can try instead.
+        Please provide a friendly, natural explanation of what went wrong and suggest what the user can try instead.
 
-Response:"""
+        Response:"""
 
         response = openai.chat.completions.create(
             model="gpt-3.5-turbo",
